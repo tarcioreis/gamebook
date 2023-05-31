@@ -1,0 +1,19 @@
+.game_board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.display_erro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    /*height: 100vh;*/
+}
+
+.display_erro img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
