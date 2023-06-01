@@ -41,3 +41,5 @@
             <img src="img/zero_pesquisa.png" alt="Nenhum resultado!">
         </div>
     <?php } ?>
+
+    <?php require_once 'inc/footer.php'; ?>
