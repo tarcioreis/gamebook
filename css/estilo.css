@@ -2,15 +2,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Geologica', sans-serif;
 }
 body {
-    background-color: white;
+    background-color: rgb(245, 244, 244);
 }
 
+#logo {
+    color: tomato;
+}
+
+#logo:hover {
+    color: rgb(251, 90, 62);
+}
+
+#link {
+    text-decoration: none;
+    color: #027ee3;
+    font-weight: bold;
+}
+
+#link:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
 
 .navegacao {
-    background-color: rgb(0, 136, 255);
+    background-color: rgb(37, 38, 38);
     /*border-bottom: 1px solid #d8d8d8;*/
     height: 50px;
     color: white;
@@ -50,13 +68,13 @@ input[type='text'] {
 }
 
 input[type="text"]:focus {
-    border-color: orange;
-    box-shadow: 0 0 5px orange;
+    border-color: tomato;
+    box-shadow: 0 0 5px tomato;
     outline: none;
 }
 
 input[type="submit"] {
-    background-color: orange;
+    background-color: tomato;
     color: white;
     cursor: pointer;
 }
@@ -79,7 +97,7 @@ main .card {
     max-width: 300px;
     flex: 1 1 210px;
     text-align: center;
-    height: 400px;
+    height: 300px; /*tamanho original é 400px*/
     border: 1px solid lightgray;
     margin: 20px;
     background-color: white;
@@ -88,7 +106,7 @@ main .card {
 }
 
 main .card .image {
-    height: 50%;
+    height: 60%; /*O tamanho original é 50%*/
     margin-bottom: 20px;
 }
 
@@ -111,7 +129,7 @@ main .card .caption p {
 }
 
 .nome_jogo {
-    line-height: 3em;
+    line-height: 1.5em; /*O tamanho original é 3em*/
 }
 
 .categoria {
@@ -124,7 +142,8 @@ main .card .caption p {
       bottom: 0;
       width: 100%;
       height: 150px; /* Altura do footer */
-      background-color: rgb(0, 136, 255);
+      /*background-color: rgb(123, 205, 246);*/
+      background-color: rgb(37, 38, 38);
       color: white;
       text-align: center;
       line-height: 50px; 

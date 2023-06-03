@@ -25,9 +25,7 @@
             </div>
             <div class="caption">
                 <a href="game.php?j=<?=$row['id']?>"><p class="nome_jogo"><?=$row['nome']?></p></a>
-                <p class="text">
-                    <?=$row['resumo']?>
-                </p>
+                
                 <p class="categoria"><?=$row['categoria']?></p>
             </div>
         </div>

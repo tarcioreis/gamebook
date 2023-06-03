@@ -1,0 +1,17 @@
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    /*border: 1px solid red;*/
+}
+
+.item {
+    height: 200px;
+   /*border: 1px solid green;*/
+}
+
+.item img {
+    object-fit: cover;
+}

@@ -1,4 +1,8 @@
 <?php
+    require_once 'inc/header.php';
+
+    if (empty($_SESSION['nome'])) header('Location: home.php');
+    
     $conn = mysqli_connect('localhost', 'root', '', 'projeto_jogos');
 ?>
 <!DOCTYPE html>
@@ -37,7 +41,7 @@
         <tbody>
             <tr>
                 <?php
-                    $select = "SELECT id, nome, data_postagem, img FROM jogos";
+                    $select = "SELECT id, nome, data_postagem, img FROM jogos ORDER BY id DESC";
                     $result = mysqli_query($conn, $select);
                 ?>
                 <?php while($row = mysqli_fetch_assoc($result)) { ?>
@@ -51,5 +55,5 @@
                 <?php } ?>
         </tbody>
     </table>
-</body>
-</html>
+    
+<?php require_once 'inc/header.php'; ?>
