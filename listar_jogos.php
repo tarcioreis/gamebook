@@ -15,7 +15,7 @@
     <title>Lista de jogos</title>
 </head>
 <body>
-    <h3>Lista de jogos cadastrados</h3>
+    
     <?php
         if (!empty($_REQUEST['action']) && !empty($_REQUEST['id'])) {
             
@@ -26,7 +26,7 @@
                 echo 'Erro ao excluir registro!';
         }
     ?>
-    <a href="painel.php">voltar ao painel</a>
+    <h3>Jogos cadastrados</h3>
     <table border=1>
         <thead>
             <tr>
@@ -45,8 +45,8 @@
                     $result = mysqli_query($conn, $select);
                 ?>
                 <?php while($row = mysqli_fetch_assoc($result)) { ?>
-                    <td><a href="form_jogos.php?action=edit&id=<?=$row['id']?>">editar</a></td>
-                    <td><a href="listar_jogos.php?action=delete&id=<?=$row['id']?>">excluir</a></td>
+                    <td><a href="form_jogos.php?action=edit&id=<?=$row['id']?>"> <img src="img/edit.png" alt=""> </a></td>
+                    <td><a href="listar_jogos.php?action=delete&id=<?=$row['id']?>"> <img src="img/delete.png" alt=""> </a></td>
                     <td><?=$row['id'];?></td>
                     <td><?=$row['nome'];?></td>
                     <td><?=$row['data_postagem'];?></td>

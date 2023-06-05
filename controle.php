@@ -9,7 +9,7 @@
     <div class="item">
         <a href="form_jogos.php">
             <img src="img/registro.png" alt="Cadastrar jogo">
-            <p>Cadastrar</p>
+            <p>Adicionar</p>
         </a>
     </div>
 

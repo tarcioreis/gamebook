@@ -15,3 +15,13 @@
 .item img {
     object-fit: cover;
 }
+
+.item a {
+    text-decoration: none;
+    color: #027ee3;
+    font-weight: bold;
+}
+
+.item a p:hover {
+    text-decoration: underline;
+}

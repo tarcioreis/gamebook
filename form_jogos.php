@@ -1,4 +1,5 @@
 <?php
+    require_once 'inc/header_admin.php';
     // Variáveis vazias em caso de insert
     $id = "";
     $nome = "";
@@ -6,21 +7,11 @@
     $descricao = "";
     $categoria = "";
     $codigo_html = "";
-
-    session_start();
+    //session_start();
     $conn = mysqli_connect('localhost', 'root', '', 'projeto_jogos');
     $extensoes_validas = array("jpg", "png", "jpeg", "webp");
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/form.css">
-    <title>Cadastro de jogos</title>
-</head>
-<body>
+
 <?php
         if (!empty($_REQUEST['action'])) {
             
@@ -127,8 +118,8 @@
         
 ?>
     <?php if (isset($_SESSION['nome'])) { ?>
-    <h3>Cadastro de jogos</h3> <a href="painel.php">voltar ao painel</a>
-    <form enctype="multipart/form-data" method="POST" action="form_jogos.php?action=save">
+    <a href="painel.php">voltar ao painel</a>
+    <form enctype="multipart/form-data" class="form" method="POST" action="form_jogos.php?action=save">
     <label>Código</label>
         <input type="text" class="input" name="id" readonly="1" value="<?=$id?>">
         <label>Nome</label>
@@ -145,5 +136,4 @@
     </form>
     <?php } ?>
     <?php if(!isset($_SESSION['nome'])) header('Location: home.php'); ?>
-</body>
-</html>
+<?php require_once 'inc/footer.php'; ?>
