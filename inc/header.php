@@ -31,7 +31,7 @@
     <?php } else { ?>
         <header class="navegacao">
         <div class="area">
-            <a href="home.php"><h3 id="logo"><span>Gamebook</span></h3></a>
+            <a href="index.php"><h3 id="logo"><span>Gamebook</span></h3></a>
             <form id="barra_pesquisa"action="resultados.php" method="post">
                 <input id="campo_pesquisa"type="text" name="game" placeholder="Mario bros">
                 <input type="submit" name="pesquisar" value="Pesquisar">
